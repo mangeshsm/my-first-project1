@@ -1,2 +1,14 @@
-<div><p>Mangesh My Project Pune</p></div>
-<router-outlet></router-outlet>
+
+<div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <a [routerLink]="['/about']">About</a>
+    <a [routerLink]="['/contact']">Contact</a>
+   
+<a [routerLink]="['/my-resume']">My-Resume</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <router-outlet></router-outlet>
+  
+  <app-footer></app-footer>
